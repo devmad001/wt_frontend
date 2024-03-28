@@ -1,0 +1,49 @@
+.sidebar .nav-item:not(.has-group):has(>.nav-link.active)::after,
+.sidebar .nav-item:not(.has-group):has(>.nav-link:hover)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0.25rem;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  z-index: 1;
+  background: #1B86FF;
+}
+
+.sidebar .nav-item:not(.has-group):has(>.nav-link.shortcut)::after,
+.sidebar .nav-item:not(.has-group):has(>.nav-link.shortcut:hover)::after {
+  background: transparent;
+}
+
+.sidebar.sidebar .nav-link {
+  @apply flex items-center py-3 px-6 rounded-md hover:bg-wt-primary-59;
+  @apply font-semibold text-wt-primary-5;
+}
+
+.sidebar.sidebar .nav-item.has-group .nav-item .nav-link {
+  @apply pl-4;
+}
+
+.sidebar .nav-link .nav-link-icon {
+  @apply mr-3;
+}
+
+.sidebar .nav-link.active {
+  @apply bg-wt-primary-59 text-white;
+}
+
+.sidebar .sidebar .gradient-orange-text {
+  background: var(--linear-orange, linear-gradient(180deg, #FFAD68 0%, #ED853A 80.71%, #AE4900 80.71%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sidebar .sidebar .gradient-blue-text {
+  background: var(--linear-blue, linear-gradient(180deg, #1B86FF 0%, #0253C0 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

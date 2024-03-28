@@ -1,0 +1,48 @@
+.base-accordion {
+  @apply divide-y-0 rounded-none border-none !important;
+}
+
+.base-accordion .base-accordion-title:not(:first-child) {
+  @apply mt-2;
+}
+
+.base-accordion .base-accordion-panel {
+  @apply rounded-lg border-2 border-wt-primary-90;
+}
+
+.base-accordion .base-accordion-title {
+  @apply font-bold text-sm py-3 px-4 flex w-full items-center justify-between text-left bg-wt-primary-80 hover:bg-wt-primary-80/80 text-wt-primary-40 focus:ring-0 first:rounded-none last:rounded-none !important;
+}
+
+.base-accordion .base-accordion-content {
+  @apply py-1 px-4 rounded-b-lg border-x border-b border-wt-primary-90 bg-wt-primary-85 !important;
+}
+
+.base-accordion .base-accordion-content table tbody tr:not(:last-child) {
+  @apply border-b border-wt-primary-80;
+}
+
+.base-accordion .base-accordion-content table tbody tr td:first-child {
+  @apply text-wt-primary-40 font-bold text-xs py-2.5;
+}
+
+.base-accordion .base-accordion-content table tbody tr td:last-child {
+  @apply text-wt-primary-120 font-normal text-sm py-2.5;
+}
+
+.base-accordion > :not([hidden]) ~ :not([hidden]) {
+  @apply border-b !important;
+}
+
+.base-accordion-title:has(+ .base-accordion-content[hidden]) {
+  @apply border rounded-lg border-wt-primary-90 bg-wt-primary-85 hover:bg-wt-primary-80 !important;
+}
+
+.base-accordion-title:has(+ .base-accordion-content:not([hidden])) {
+  @apply rounded-t-lg border-x border-t border-b-0 rounded-b-none bg-wt-primary-80 border-wt-primary-90 !important;
+}
+
+select {
+  background-image: url('/src/assets/media/image/chevrons-up-down.png') !important;
+  background-size: auto !important;
+}

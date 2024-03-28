@@ -1,0 +1,9 @@
+.activeusers-bar .item {
+  @apply border-r border-white
+}
+.activeusers-bar .item:first-child {
+  @apply rounded-l-lg
+}
+.activeusers-bar .item:last-child {
+  @apply rounded-r-lg border-0
+}

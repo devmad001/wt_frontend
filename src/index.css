@@ -1,0 +1,418 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 14px;
+}
+
+/* utils styles */
+*::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+  
+*::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 rounded-full;
+  border-right: none;
+  border-left: none;
+}
+
+*::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 16px; 
+}
+
+*::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 16px;
+}
+
+/* Text styles */
+.text-overflow {
+  /* max-width: 100%; */
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  word-break: keep-all;
+  overflow: hidden;
+}
+
+.break-word {
+  word-break: break-word !important;
+}
+
+/* cursor styles */
+.cursor-pointer-all, .cursor-pointer-all * {
+  cursor: pointer !important;
+}
+
+/* avatar styles */
+.av-bg-blue {
+  @apply bg-blue-500;
+}
+
+.av-bg-green {
+  @apply bg-green-500;
+}
+
+.av-bg-gray {
+  @apply bg-gray-500;
+}
+
+.av-bg-red {
+  @apply bg-red-500;
+}
+
+.av-bg-yellow {
+  @apply bg-yellow-400;
+}
+
+.av-bg-orange {
+  @apply bg-orange-400;
+}
+
+.header-ip-search {
+  @apply bg-white border border-white text-gray-900 sm:text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full pl-8 p-2.5;
+  @apply dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+}
+
+/* Button styles */
+.btn {
+  @apply font-medium text-sm px-5 py-3 focus:outline-none;
+}
+
+.btn.btn-sm {
+  @apply px-4 py-2;
+}
+
+.btn.btn-primary {
+  @apply text-white bg-wt-primary-55 hover:bg-wt-primary-55/75;
+  @apply dark:bg-wt-primary-55 dark:bg-wt-primary-50/75 dark:hover:bg-wt-primary-50 dark:focus:ring-wt-primary-50;
+}
+
+.btn.btn-secondary {
+  @apply text-gray-900 bg-wt-primary-20 hover:bg-wt-primary-30/75;
+  @apply dark:bg-wt-primary-30 dark:hover:bg-wt-primary-40 dark:focus:ring-wt-primary-50;
+}
+
+.btn.btn-outline-primary {
+  @apply text-wt-primary-55 bg-transparent border-2 border-wt-primary-55;
+  @apply dark:text-wt-primary-20 dark:bg-transparent dark:border-wt-primary-20 dark:focus:ring-wt-primary-50;
+}
+
+.btn.btn-red {
+  @apply text-white bg-red-600 hover:bg-red-800;
+  @apply dark:bg-red-600 dark:hover:bg-red-800;
+}
+
+.btn.btn-outline-orange {
+  @apply text-orange-500 bg-transparent border-2 border-orange-500;
+  /* @apply dark:text-wt-primary-20 dark:bg-transparent dark:border-wt-primary-20 dark:focus:ring-wt-primary-50; */
+}
+
+.btn.btn-orange {
+  @apply text-white bg-orange-500 border-2 border-orange-500;
+  /* @apply dark:text-wt-primary-20 dark:bg-transparent dark:border-wt-primary-20 dark:focus:ring-wt-primary-50; */
+}
+
+/* Input styles */
+.ip-search {
+  @apply bg-white border border-white text-gray-900 sm:text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5;
+  @apply dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+}
+
+/* chart styles */
+.apexcharts-tooltip {
+  @apply bg-white dark:bg-gray-700 text-gray-500 dark:text-gray-400 border-0 rounded-lg shadow-lg !important;
+}
+
+.apexcharts-tooltip .apexcharts-tooltip-title {
+  @apply py-2 px-4 bg-gray-100 dark:bg-gray-600 border-b border-gray-200 dark:border-gray-500 !important;
+}
+
+.apexcharts-xaxistooltip {
+  @apply text-gray-500 border-0 bg-white dark:bg-gray-700 dark:text-gray-300 rounded-lg shadow-lg !important;
+}
+
+.apexcharts-tooltip .apexcharts-tooltip-text-y-value {
+  @apply dark:text-white;
+}
+
+.apexcharts-xaxistooltip-text {
+  @apply font-medium text-sm !important;
+}
+
+.apexcharts-xaxistooltip:before,
+.apexcharts-xaxistooltip:after {
+  @apply border-0 !important;
+}
+
+/* SVG map styles */
+.svgMap-map-wrapper {
+  @apply bg-white !important;
+}
+
+.svgMap-map-image {
+  @apply dark:bg-gray-800;
+}
+
+.svgMap-map-controls-wrapper {
+  @apply shadow-none left-0 bottom-0 dark:bg-gray-800 !important;
+}
+
+.svgMap-map-controls-zoom {
+  @apply dark:bg-gray-800 !important;
+}
+
+.svgMap-map-wrapper .svgMap-control-button {
+  @apply rounded-lg border-solid border border-gray-300 hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-600 !important;
+}
+
+.svgMap-map-wrapper .svgMap-control-button.svgMap-zoom-button:after,
+.svgMap-map-wrapper .svgMap-control-button.svgMap-zoom-button:before {
+  @apply dark:bg-gray-600 dark:hover:bg-gray-500;
+}
+
+.svgMap-map-wrapper .svgMap-control-button:first-child {
+  @apply mr-2 !important;
+}
+
+.svgMap-tooltip {
+  @apply bg-white dark:bg-gray-700 shadow-lg rounded-lg border-0 text-left !important;
+}
+
+.svgMap-tooltip .svgMap-tooltip-content-container .svgMap-tooltip-flag-container {
+  @apply inline-block mr-2 text-left border-0 p-0 !important;
+}
+
+.svgMap-tooltip .svgMap-tooltip-content-container .svgMap-tooltip-flag-container .svgMap-tooltip-flag {
+  @apply inline-block border-0 h-4 p-0 !important;
+}
+
+.svgMap-tooltip .svgMap-tooltip-title {
+  @apply inline-block pt-2 text-gray-900 dark:text-white font-semibold text-sm !important;
+}
+
+.svgMap-tooltip .svgMap-tooltip-content {
+  @apply mt-0 !important;
+}
+
+.svgMap-tooltip .svgMap-tooltip-content table td {
+  @apply text-sm text-left text-gray-500 dark:text-gray-400 font-normal !important;
+}
+
+.svgMap-tooltip .svgMap-tooltip-content table td span {
+  @apply text-sm text-left text-gray-900 dark:text-white font-semibold !important;
+}
+
+.svgMap-tooltip .svgMap-tooltip-pointer {
+  @apply hidden !important;
+}
+
+.svgMap-map-wrapper .svgMap-country {
+  @apply dark:stroke-gray-800;
+}
+
+/* kanban styles */
+
+.drag-card {
+  @apply opacity-100 !important;
+  @apply rotate-6;
+}
+
+.ghost-card {
+  @apply bg-gray-100/40 dark:bg-gray-600/40 !important;
+}
+
+/* calendar styles */
+
+.fc .fc-toolbar {
+  @apply flex-row-reverse justify-end px-4 !important;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+  @apply mb-5 !important;
+}
+
+.fc .fc-toolbar-title {
+  @apply text-lg text-gray-900 font-semibold !important;
+}
+
+.fc .fc-today-button {
+  @apply rounded-lg border border-gray-200 bg-white text-sm font-medium px-4 py-2 text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 !important;
+}
+
+.fc-direction-ltr .fc-toolbar > * > :not(:first-child) {
+  @apply mx-2 !important;
+}
+
+.fc .fc-button-group .fc-prev-button,
+.fc .fc-button-group .fc-next-button {
+  @apply bg-white border-0 text-gray-500 hover:text-gray-900 cursor-pointer p-2 hover:bg-gray-100 rounded inline-flex focus:bg-gray-100 focus:ring-1 focus:ring-gray-100 justify-center !important;
+}
+
+.fc .fc-scrollgrid {
+  @apply border-l-0 border-gray-200 !important;
+}
+
+.fc .fc-daygrid-day-frame {
+  @apply border-gray-200 !important;
+}
+
+.fc .fc-col-header-cell-cushion {
+  @apply py-3 text-base text-gray-900 font-semibold !important;
+}
+
+.fc-theme-standard th {
+  @apply border-0 border-b border-gray-200 !important;
+}
+
+.fc-direction-ltr .fc-daygrid-event.fc-event-end {
+  @apply mr-2 !important;
+}
+
+.fc-direction-ltr .fc-daygrid-event.fc-event-start {
+  @apply ml-2 !important;
+}
+
+.fc .fc-event .fc-event-main {
+  @apply p-2 bg-blue-700 hover:bg-blue-800 !important;
+}
+
+.fc .fc-h-event .fc-event-main-frame {
+  @apply text-xs font-semibold !important;
+}
+
+.fc .fc-daygrid-day-frame {
+  @apply hover:bg-gray-50 cursor-pointer !important;
+}
+
+/* feed styles */
+
+.btn-disabled {
+  cursor: not-allowed !important;
+  opacity: 0.55;
+}
+
+input:disabled, select:disabled {
+  cursor: not-allowed !important;
+  opacity: 0.45 !important;
+}
+
+@media (min-width: 1280px) {
+  .feed-container {
+    height: calc(100vh - 4rem);
+  }
+}
+
+.bg-gradient-blue {
+  @apply bg-gradient-to-b from-blue-500 to-blue-600;
+}
+
+.bg-gradient-orange {
+  @apply bg-gradient-to-b from-orange-300 to-orange-400;
+}
+
+.sign-up-select .react-select__input-container .react-select__input {
+  @apply text-gray-900 text-base font-normal truncate !important;
+}
+
+.sign-up-select .react-select__indicator.react-select__clear-indicator,
+.sign-up-select .react-select__indicator-separator {
+  @apply hidden;
+}
+
+.sign-up-select:not(.invalid) .react-select__control {
+  @apply bg-gray-300 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-0.5 dark:bg-gray-700 dark:border-gray-600 placeholder-gray-350 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+}
+
+.sign-up-select.invalid .react-select__control {
+  @apply bg-gray-300 border text-gray-900 sm:text-sm rounded-lg p-0.5 focus:ring-red-500  dark:bg-gray-700 placeholder-gray-350 dark:text-white dark:focus:ring-red-500 dark:border-red-500 border-red-600 dark:focus:border-red-500 focus:outline-none focus:border-red-600 shadow-none;
+}
+
+.sign-up-select .react-select__value-container .react-select__placeholder {
+  @apply text-gray-350;
+}
+
+.border-space {
+  @apply h-[90%] w-[1px] border-r border-gray-300;
+}
+
+/* Chat Box */
+/* message styles */
+.tab-bar {
+  @apply text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700;
+}
+.tab-bar .tab-item {
+  @apply relative flex-1 text-lg font-bold text-wt-primary-75 hover:text-gray-900 mb-0;
+}
+.tab-bar .tab-item:hover::after {
+  content: '';
+  position: absolute;
+  width: 90%;
+  bottom: 0;
+  right: 5%;
+  left: 5%;
+  @apply px-4 border-t-4 rounded-t-lg border-blue-500;
+}
+.tab-bar .tab-item.active {
+  @apply flex-1 text-lg font-bold text-gray-900 dark:text-gray-200 dark:border-gray-200 dark:hover:text-gray-200 !important;
+}
+.tab-bar .tab-item.active::after {
+  content: '';
+  position: absolute;
+  width: 90%;
+  bottom: 0;
+  right: 5%;
+  left: 5%;
+  @apply px-4 border-t-4 rounded-t-lg border-blue-500;
+}
+.list-view .item {
+  @apply cursor-pointer hover:bg-wt-primary-85;
+}
+.list-view .item.active {
+  @apply bg-wt-primary-85;
+}
+.chatbox {
+  @apply min-w-full bg-white rounded-lg dark:bg-gray-700;
+}
+.chatbox .chatbox-header {
+  @apply p-4 border-b border-wt-primary-20;
+  @apply dark:border-gray-600;
+}
+.chatbox .chatbox-body {
+  @apply w-full min-h-[60vh] bg-wt-primary-85 overflow-y-auto;
+}
+.chatbox .chatbox-body .chat-msg:not(.system) {
+  @apply w-fit bg-transparent border border-wt-primary-90 rounded-xl;
+}
+.chatbox .chatbox-body .chat-msg.from-me  {
+  @apply bg-white border-white ml-auto;
+}
+.chatbox .chatbox-body .chat-msg.system  {
+  @apply w-full bg-transparent;
+}
+.chatbox .chatbox-body .chat-msg .message-action {
+  @apply flex;
+}
+.chatbox .chatbox-footer {
+  @apply p-4 border-t border-wt-primary-20;
+  @apply dark:border-gray-600;
+}
+.chatbox .chatbox-footer .btn.btn-img-attach {
+  @apply p-3 text-wt-primary-40;
+  @apply dark:text-wt-primary-40 dark:hover:bg-wt-primary-20; 
+}
+.chatbox .input-chat-msg {
+  @apply bg-wt-primary-20 border border-white text-gray-900 font-medium rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+}
+.chatbox .input-chat-msg::placeholder {
+  @apply italic;
+}

@@ -1,0 +1,11 @@
+ul.pagination {
+  @apply flex items-center space-x-1;
+}
+
+ul.pagination li {
+  @apply text-wt-primary-120 text-sm font-normal h-6 w-6 flex items-center justify-center rounded-lg;
+}
+
+ul.pagination li.selected {
+  @apply text-white font-semibold bg-blue-500;
+}

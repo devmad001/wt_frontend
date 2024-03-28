@@ -1,0 +1,9 @@
+.btn.btn-blue {
+  @apply py-3 px-4 rounded-lg;
+  @apply bg-blue-500;
+  @apply text-white font-semibold text-base;
+}
+
+.btn.btn-blue.btn-disabled:disabled {
+  @apply bg-wt-primary-75 opacity-100 !important;
+}

@@ -1,0 +1,40 @@
+.user-management {
+  height: calc(100vh - 80px);
+}
+
+.viewType_btn {
+  @apply text-wt-primary-75 font-bold text-sm flex items-center space-x-1.5 cursor-pointer relative py-3;
+}
+
+.viewType_btn.active {
+  @apply text-wt-primary-115;
+}
+
+.viewType_btn.active::after {
+  content: '';
+  @apply absolute bottom-0 left-0 h-1 w-full rounded-t-lg z-[1] bg-wt-primary-115;
+}
+
+.viewType_btn.active p {
+  @apply text-wt-primary-120 font-bold text-sm;
+}
+
+tr:hover td .edit {
+  @apply text-wt-primary-115 !important;
+}
+
+.table-scroll::-webkit-scrollbar {
+  height: 6px !important;
+}
+
+.pagination {
+  @apply flex items-center space-x-1;
+}
+
+.pagination li {
+  @apply text-wt-primary-120 text-sm font-normal h-6 w-6 flex items-center justify-center rounded-lg;
+}
+
+.pagination li.selected {
+  @apply text-white font-semibold bg-wt-primary-115;
+}

@@ -1,0 +1,28 @@
+.tabs-tb .tabs-nav {
+  @apply flex flex-wrap items-center justify-start border-b border-gray-200 p-4 pt-3 pb-0;
+}
+
+.tabs-tb .tabs-nav .tabs-nav-item {
+  @apply relative flex items-center justify-center text-base text-wt-primary-75 cursor-pointer py-2 pb-4 mr-4;
+}
+
+.tabs-tb .tabs-nav .tabs-nav-item:last-child {
+  @apply mr-0;
+}
+
+.tabs-tb .tabs-nav .tabs-nav-item.active {
+  @apply text-wt-primary-120;
+}
+
+.tabs-tb .tabs-nav .tabs-nav-item.active .icon {
+  @apply text-blue-500;
+}
+
+.tabs-tb .tabs-nav .tabs-nav-item.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  @apply h-[4px] rounded-t-lg bg-blue-500;
+}

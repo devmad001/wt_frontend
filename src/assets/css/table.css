@@ -1,0 +1,32 @@
+table.table thead {
+  @apply rounded-t-lg;
+}
+
+table.table thead tr  {
+  @apply bg-white rounded-t-lg;
+  @apply border-b border-gray-300;
+}
+
+table.table thead tr th {
+  @apply px-4 py-2 text-sm font-bold text-left text-wt-primary-40 dark:text-gray-400;
+}
+
+table.table thead tr th:first-child {
+  @apply rounded-tl-lg;
+}
+
+table.table thead tr th:last-child {
+  @apply rounded-tr-lg;
+}
+
+table.table tbody tr td {
+  @apply px-4 py-2;
+}
+
+/* table.table tbody tr:last-child td:first-child {
+  @apply rounded-bl-lg;
+}
+
+table.table tbody tr:last-child td:last-child {
+  @apply rounded-br-lg;
+} */

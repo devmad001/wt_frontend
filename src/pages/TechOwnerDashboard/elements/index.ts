@@ -1,0 +1,6 @@
+export { default as ActiveUserWidget } from './ActiveUserWidget'
+export { default as PageViewsWidget } from './PageViewsWidget'
+export { default as MessagesSentWidget } from './MessagesSentWidget'
+export { default as FilesUploadWidget } from './FilesUploadWidget'
+export { default as AskedQuestionsWidget } from './AskedQuestionsWidget'
+export { default as AllUserOnline } from './AllUserOnline'

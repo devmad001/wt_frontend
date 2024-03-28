@@ -1,0 +1,41 @@
+.btn-disabled {
+  @apply bg-gray-700 !important;
+}
+
+.choose-tools {
+  @apply flex;
+}
+
+.choose-tools .item {
+  @apply relative;
+  @apply flex flex-col cursor-pointer;
+  @apply border border-wt-primary-90 rounded-lg p-4;
+}
+
+.choose-tools .item .title {
+
+}
+
+.choose-tools .item .desc {
+  @apply text-xs;
+}
+
+.choose-tools .item .icon {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+  z-index: 1;
+}
+
+.choose-tools .item.unchecked {
+  @apply cursor-pointer;
+  @apply bg-wt-primary-110;
+  @apply text-wt-primary-40;
+  @apply border border-wt-primary-110 rounded-lg p-4;
+}
+
+.choose-tools .item.checked {
+  @apply bg-white;
+  @apply text-wt-primary-40;
+  @apply border-wt-primary-90;
+}

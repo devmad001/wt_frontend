@@ -1,0 +1,13 @@
+.eslintrc.cjs
+**/src/registerServiceWorker.ts
+
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+**/public

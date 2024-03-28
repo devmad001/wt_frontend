@@ -1,0 +1,14 @@
+.react-select-container
+  .react-select__control
+  .react-select__value-container.react-select__value-container--has-value
+  .react-select__single-value {
+  @apply text-sm ml-0;
+}
+
+.react-select-container .react-select__control .react-select__value-container .react-select__placeholder {
+  @apply text-sm text-wt-primary-40 pl-0 ml-0;
+}
+
+.react-select-container .react-select__control .react-select__value-container .react-select__input-container {
+  @apply pl-0;
+}

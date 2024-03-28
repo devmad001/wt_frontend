@@ -1,0 +1,72 @@
+.form-control {
+  @apply block w-full p-3 px-4;
+  @apply bg-wt-primary-85 border border-wt-primary-90;
+  @apply text-wt-primary-40 font-medium sm:text-sm rounded-lg focus:ring-wt-primary-1 focus:border-blue-500;
+  /* @apply dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-wt-primary-1 dark:focus:border-blue-500; */
+}
+
+.form-control::placeholder {
+  @apply text-wt-primary-75;
+}
+
+.form-control.py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.form-control.is-invalid {
+  @apply border-red-600 focus:outline-none focus:border-red-600 dark:border-red-500 dark:focus:border-red-500 !important;
+}
+
+.form-control:not(.invalid) {
+  @apply block w-full p-3 px-4;
+  @apply bg-white border border-wt-primary-90;
+  @apply text-wt-primary-55 font-medium sm:text-sm rounded-lg focus:ring-wt-primary-1 focus:border-wt-primary-90;
+}
+
+.form-control.form-gray:not(.invalid) {
+  @apply bg-white border-wt-primary-75;
+}
+
+.form-control.react-select:not(.invalid) {
+  @apply flex py-2;
+}
+
+.form-control:disabled {
+  opacity: 1 !important;
+  @apply bg-gray-300 text-wt-primary-40 border-gray-300 !important;
+}
+
+.form-control.invalid {
+  @apply border-red-600 focus:ring-red-500 focus:border-red-600 focus:outline-none;
+}
+
+[type='checkbox'].check-gradient-blue:checked {
+  background-image: url('/src/assets/media/svg/tick-blue.svg');
+  background-size: 1.1rem 1.1rem;
+}
+
+.form-control.is-invalid {
+  border-color: #f1416c;
+  background-image: unset;
+}
+
+.error-message {
+  color: #f1416c;
+}
+
+.radio-btn {
+  @apply w-4 h-4 cursor-pointer;
+  @apply text-blue-500 bg-gray-100 border-gray-300 focus:ring-blue-500;
+  /* @apply dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500; */
+}
+
+.datepicker-control {
+  @apply relative w-full;
+}
+
+.datepicker-control .datepicker-input:not(.invalid) {
+  @apply block w-full p-3 px-4 pl-10 !important;
+  @apply bg-white border border-wt-primary-90 !important;
+  @apply text-wt-primary-55 font-medium text-base rounded-lg bg-wt-primary-85 outline-none focus:bg-white focus:border-blue-500 !important;
+}
